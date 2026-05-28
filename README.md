@@ -1,5 +1,5 @@
 # Herbal Remedy Recommendation & Plant Detection System
-**Author:** MAKER SAKER | ICTU292928 | BSc Software Engineering  
+**Author:** BECKLIN SAMUEL | ICTU20223544 | BSc Software Engineering  
 **Stack:** PHP + MySQL + Python (TensorFlow) + Gemini API  
 **Server:** XAMPP (Windows)
 
