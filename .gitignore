@@ -1,0 +1,47 @@
+# ============================================================
+#  .gitignore — Herbal Remedy System
+#  Protects sensitive files from being pushed to GitHub
+# ============================================================
+
+# ── Config files with secrets ────────────────────────────────
+config/config.php
+
+# ── Uploaded images (patient plant scans) ───────────────────
+assets/images/uploads/
+assets/images/plants/
+
+# ── Python virtual environment ───────────────────────────────
+python_model/venv/
+python_model/__pycache__/
+python_model/*.pyc
+python_model/model/*.h5
+python_model/model/*.keras
+python_model/model/*.pkl
+
+# ── Database export dumps ────────────────────────────────────
+*.sql.bak
+database/backup_*.sql
+
+# ── XAMPP / system files ─────────────────────────────────────
+.htaccess.bak
+error_log
+*.log
+
+# ── OS generated files ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / editor files ───────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── Node (if any frontend tooling added later) ──────────────
+node_modules/
+npm-debug.log
+
+# ── Composer (if added later) ────────────────────────────────
+vendor/
+composer.lock
