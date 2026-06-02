@@ -30,39 +30,69 @@ $plants=$db->query('SELECT * FROM plants WHERE is_active=1 ORDER BY RAND() LIMIT
 
 <!-- Quick action cards -->
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.75rem;">
+
+  <!-- Check Symptoms -->
   <a href="<?= APP_URL ?>/patient/pages/symptom_checker.php" style="text-decoration:none;">
-    <div class="card" style="border:2px solid var(--green-light);transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+    <div class="card" style="border:2px solid var(--green-light);transition:all 0.2s;" 
+         onmouseover="this.style.transform='translateY(-3px)'" 
+         onmouseout="this.style.transform=''">
       <div class="card-body" style="text-align:center;padding:1.5rem 1rem;">
-        <div style="font-size:2.2rem;margin-bottom:0.6rem;">🔍</div>
+        <div style="margin-bottom:0.6rem;">
+          <img src="<?= APP_URL ?>/assets/images/check_symptoms_icon.png" 
+               alt="Check Symptoms" 
+               style="width:60px;height:60px;object-fit:contain;">
+        </div>
         <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">Check Symptoms</h4>
         <p style="font-size:0.8rem;margin:0;">Describe how you feel and get herbal remedy suggestions</p>
       </div>
     </div>
   </a>
+
+  <!-- Identify Plant (Updated with new icon) -->
   <a href="<?= APP_URL ?>/patient/pages/plant_detect.php" style="text-decoration:none;">
-    <div class="card" style="border:2px solid var(--earth-light);transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+    <div class="card" style="border:2px solid var(--earth-light);transition:all 0.2s;" 
+         onmouseover="this.style.transform='translateY(-3px)'" 
+         onmouseout="this.style.transform=''">
       <div class="card-body" style="text-align:center;padding:1.5rem 1rem;">
-        <div style="font-size:2.2rem;margin-bottom:0.6rem;">📷</div>
+        <div style="margin-bottom:0.6rem;">
+          <img src="<?= APP_URL ?>/assets/images/identify_plant_icon.png" 
+               alt="Identify Plant" 
+               style="width:60px;height:60px;object-fit:contain;">
+        </div>
         <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">Identify Plant</h4>
         <p style="font-size:0.8rem;margin:0;">Upload a photo to identify a medicinal plant with AI</p>
       </div>
     </div>
   </a>
+  <!-- Find Herbalist -->
   <a href="<?= APP_URL ?>/patient/pages/herbalists.php" style="text-decoration:none;">
-    <div class="card" style="border:2px solid #EBF8FF;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+    <div class="card" style="border:2px solid #e0e0e0;transition:all 0.2s;" 
+         onmouseover="this.style.transform='translateY(-3px)'" 
+         onmouseout="this.style.transform=''">
       <div class="card-body" style="text-align:center;padding:1.5rem 1rem;">
-        <div style="font-size:2.2rem;margin-bottom:0.6rem;">🌱</div>
+        <div style="margin-bottom:0.6rem;">
+          <img src="<?= APP_URL ?>/assets/images/find_herbalist.png" 
+               alt="Find Herbalist" 
+               style="width:60px;height:60px;object-fit:contain;">
+        </div>
         <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">Find Herbalist</h4>
         <p style="font-size:0.8rem;margin:0;">Browse and book consultations with herbalists</p>
       </div>
     </div>
   </a>
+  <!-- My Appointments -->
   <a href="<?= APP_URL ?>/patient/pages/my_appointments.php" style="text-decoration:none;">
-    <div class="card" style="border:2px solid #FEF3C7;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+    <div class="card" style="border:2px solid #ffeaa7;transition:all 0.2s;" 
+         onmouseover="this.style.transform='translateY(-3px)'" 
+         onmouseout="this.style.transform=''">
       <div class="card-body" style="text-align:center;padding:1.5rem 1rem;">
-        <div style="font-size:2.2rem;margin-bottom:0.6rem;">📅</div>
+        <div style="margin-bottom:0.6rem;">
+          <img src="<?= APP_URL ?>/assets/images/calendar_icon.png" 
+               alt="My Appointments" 
+               style="width:60px;height:60px;object-fit:contain;">
+        </div>
         <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">My Appointments</h4>
-        <p style="font-size:0.8rem;margin:0;"><?=$stats['pending']?> pending appointment(s)</p>
+        <p style="font-size:0.8rem;margin:0;">0 pending appointment(s)</p>
       </div>
     </div>
   </a>
