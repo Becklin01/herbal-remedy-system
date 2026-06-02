@@ -110,9 +110,9 @@ The model API will run on `http://localhost:5000`
 
 ## Build Order (Modules)
 1. ✅ Database schema + folder structure
-2. ⬜ Login, registration, logout (all 3 roles)
-3. ⬜ Admin panel (plants, remedies, users, appointments)
-4. ⬜ Patient symptom checker (rules + Gemini hybrid)
-5. ⬜ Patient plant detection (Python microservice)
-6. ⬜ Herbalist appointment booking
+2. ✅ Login, registration, logout (all 3 roles)
+3. ✅ Admin panel (plants, remedies, users, appointments)
+4. ✅ Patient symptom checker (rules + Gemini hybrid)
+5. ✅ Patient plant detection (Python microservice)
+6. ✅ Herbalist appointment booking
 7. ⬜ Python TensorFlow model + Flask API
