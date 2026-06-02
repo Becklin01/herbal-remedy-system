@@ -1,0 +1,15 @@
+This folder stores the trained TensorFlow model file.
+
+After running train_model.py, the following file will appear here:
+  - plant_model.h5          ← Trained MobileNetV2 model
+  - training_history.png    ← Accuracy/loss training plot
+
+The model file is excluded from Git (.gitignore) because:
+  1. It is large (50-200MB)
+  2. It is generated from your dataset
+  3. Each training run produces a different file
+
+To generate the model:
+  1. cd python_model/
+  2. python download_dataset.py
+  3. python train_model.py
