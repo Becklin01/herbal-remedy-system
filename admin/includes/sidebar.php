@@ -14,9 +14,15 @@ function navLink(string $href, string $icon, string $label, string $current): st
 ?>
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-brand">
-    <h4>🌿 Herbal System</h4>
-    <p>Administrator Panel</p>
+  <div style="display:flex;align-items:center;gap:0.6rem;">
+    <img src="<?= APP_URL ?>/assets/images/herbal_logo.png"
+         style="width:42px;height:42px;object-fit:contain;" alt="logo">
+    <div>
+      <h4 style="margin:0;color:#fff;font-family:var(--font-display);font-size:1.15rem;">Herbal System</h4>
+      <p style="margin:0;font-size:0.75rem;color:var(--green-light);">Administrator Panel</p>
+    </div>
   </div>
+</div>
   <nav class="sidebar-nav">
     <div class="sidebar-section-title">Overview</div>
     <?= navLink(APP_URL.'/admin/pages/dashboard.php',    'fa-solid fa-gauge',            'Dashboard',        $currentPage) ?>

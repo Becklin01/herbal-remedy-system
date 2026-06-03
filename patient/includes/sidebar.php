@@ -7,8 +7,16 @@ function pNavLink(string $href, string $icon, string $label, string $current): s
 }
 ?>
 <aside class="sidebar" id="sidebar">
-  <div class="sidebar-brand"><h4>🌿 Herbal System</h4><p>Patient Portal</p></div>
-  <nav class="sidebar-nav">
+  <<div class="sidebar-brand">
+  <div style="display:flex;align-items:center;gap:0.6rem;">
+    <img src="<?= APP_URL ?>/assets/images/herbal_logo.png"
+         style="width:42px;height:42px;object-fit:contain;" alt="logo">
+    <div>
+      <h4 style="margin:0;color:#fff;font-family:var(--font-display);font-size:1.15rem;">Herbal System</h4>
+      <p style="margin:0;font-size:0.75rem;color:var(--green-light);">Patient Portal</p>
+    </div>
+  </div>
+</div>
     <div class="sidebar-section-title">Main</div>
     <?= pNavLink(APP_URL.'/patient/pages/dashboard.php',       'fa-solid fa-gauge',            'Dashboard',       $currentPage) ?>
     <?= pNavLink(APP_URL.'/patient/pages/symptom_checker.php', 'fa-solid fa-stethoscope',      'Symptom Checker', $currentPage) ?>
