@@ -41,9 +41,9 @@ DATASET_DIR   = 'dataset'
 MODEL_DIR     = 'model'
 MODEL_PATH    = os.path.join(MODEL_DIR, 'plant_model.h5')
 IMG_SIZE      = (224, 224)
-BATCH_SIZE    = 32
-EPOCHS_FROZEN = 10    # Phase 1: train only top layers
-EPOCHS_FINE   = 20    # Phase 2: fine-tune last 30 base layers
+BATCH_SIZE    = 16
+EPOCHS_FROZEN = 15    # Phase 1: train only top layers
+EPOCHS_FINE   = 30    # Phase 2: fine-tune last 30 base layers
 LEARNING_RATE = 0.001
 NUM_CLASSES   = len(PLANT_CLASSES)
 
