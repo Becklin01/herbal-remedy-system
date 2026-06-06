@@ -20,7 +20,7 @@ import requests
 from plant_classes import PLANT_CLASSES, SCIENTIFIC_NAMES
 
 DATASET_DIR     = 'dataset'
-IMAGES_PER_CLASS = 80          # Target images per plant
+IMAGES_PER_CLASS = 150          # Target images per plant
 REQUEST_DELAY    = 0.5          # Seconds between API calls (be polite)
 
 # iNaturalist API — free, no key required
