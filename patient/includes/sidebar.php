@@ -7,13 +7,13 @@ function pNavLink(string $href, string $icon, string $label, string $current): s
 }
 ?>
 <aside class="sidebar" id="sidebar">
-  <<div class="sidebar-brand">
+  <div class="sidebar-brand" style="flex-shrink:0;padding:0.85rem 1.25rem;">
   <div style="display:flex;align-items:center;gap:0.6rem;">
     <img src="<?= APP_URL ?>/assets/images/herbal_logo.png"
-         style="width:42px;height:42px;object-fit:contain;" alt="logo">
-    <div>
-      <h4 style="margin:0;color:#fff;font-family:var(--font-display);font-size:1.15rem;">Herbal System</h4>
-      <p style="margin:0;font-size:0.75rem;color:var(--green-light);">Patient Portal</p>
+         style="width:34px;height:34px;object-fit:contain;flex-shrink:0;" alt="logo">
+    <div style="overflow:hidden;">
+      <h4 style="margin:0;color:#fff;font-family:var(--font-display);font-size:1rem;white-space:nowrap;">Herbal System</h4>
+      <p style="margin:0;font-size:0.72rem;color:var(--green-light);">Patient Portal</p>
     </div>
   </div>
 </div>
